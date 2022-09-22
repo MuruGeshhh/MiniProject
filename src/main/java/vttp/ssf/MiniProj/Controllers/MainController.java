@@ -64,7 +64,7 @@ public class MainController {
 
         
         
-        return "/Index";
+        return "Index";
 
     }
 
@@ -84,7 +84,7 @@ public class MainController {
         
         model.addAttribute("search",sm);
         
-        return "/SearchResult";
+        return "SearchResult";
 
     }
 
