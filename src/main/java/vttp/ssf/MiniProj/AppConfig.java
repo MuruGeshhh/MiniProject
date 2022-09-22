@@ -1,4 +1,4 @@
-package vttp.ssf.template;
+package vttp.ssf.MiniProj;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Create comment</h1>
+
+    <!--  <Form th:action="@{/addReview}" th:object="${ReviewForm}" method="POST"> -->
+        <Form th:action="@{/addReview/__${movieid}__}" th:object="${ReviewForm}" method="POST">
+        <P>Name: 
+            <input type="text" th:field="*{Name}"  required/>
+       </P>
+
+           <input type="hidden" th:value="${movieid}" name="movieid" />
+
+           <input type="hidden" th:value="${title}" name="title" />
+       <br>
+       <P>Comment: 
+        <input type="text" th:field="*{Comment}"  required/>
+      </P> 
+
+       <br>
+       <input type="submit" value="Create"/>
+    </Form>
+    
+</body>
+</html>
