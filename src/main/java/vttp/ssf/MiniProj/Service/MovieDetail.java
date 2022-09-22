@@ -64,7 +64,7 @@ public class MovieDetail {
                 .queryParam("id", id)
                 .toUriString();
 
-                System.out.println( url +"     "+ key);
+           //     System.out.println( url +"     "+ key);
                 // Create the GET request, GET url
                 RequestEntity<Void> req = RequestEntity.get(url).build();
 
