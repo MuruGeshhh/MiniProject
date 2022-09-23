@@ -63,7 +63,7 @@ public class MainController {
     public String getE(Model model){
 
         
-        
+        // return "/index"
         return "Index";
 
     }
@@ -97,7 +97,7 @@ public class MainController {
      model.addAttribute("hello", cm);
      
      
-     return "/ComingSoon";
+     return "ComingSoon";
     }
 
   
@@ -110,7 +110,7 @@ public class MainController {
      model.addAttribute("hello", tp);
      
      
-     return "/top250";
+     return "top250";
     }
 
 
@@ -143,7 +143,7 @@ public class MainController {
      System.out.println(id);
     
      
-     return "/MovieDetail";
+     return "MovieDetail";
     }
 
 
@@ -158,7 +158,7 @@ public class MainController {
     String url = trSVc.gettrailer(id);
 
     model.addAttribute("url", url);
-       return "/TrailerPage";
+       return "TrailerPage";
     }
 
 
